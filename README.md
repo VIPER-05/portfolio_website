@@ -17,8 +17,7 @@ I am a Computer Science Engineering professional with a strong passion for Softw
 This website was built using the following technologies:
 - HTML5
 - CSS3
-- JavaScript
-
+ 
 Clone this repository to your local machine:
 ```bash
 git clone https://github.com/yourusername/your-portfolio-website.git
