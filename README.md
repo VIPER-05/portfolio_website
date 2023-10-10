@@ -8,8 +8,7 @@ I am a Computer Science Engineering professional with a strong passion for Softw
 
 ## Features
 
-Feel free to explore my website by visiting [https://www.yourportfolio.com](https://www.yourportfolio.com). Here's how you can navigate through the sections:
-
+ Here's how you can navigate through the sections:
 - **Home Page:** Read a brief introduction to get to know me.
 - **Portfolio:** Browse through my projects, click on each to learn more.
 - **Resume:** Download my resume for a detailed overview of my qualifications in the field of Computer Science Engineering and Software Development.{to be added}
