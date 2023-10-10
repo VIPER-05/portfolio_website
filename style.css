@@ -1,0 +1,575 @@
+*{
+    margin: 0%;
+    padding: 0%;
+   font-family:"MKX Title";
+   font-size: 20px;
+ 
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{position: relative;
+     overflow: hidden;
+}   
+#page{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+}
+#page>img{
+    
+    width: 47%;
+    position: absolute;
+    right:6px;
+    top: 12%;
+    border-radius: 65%;
+    
+   
+   --f: .1; /* the parallax factor (the smaller the better) */
+    /* radius */
+   
+   --_f: calc(100%*var(--f)/(1 + var(--f)));
+   --_a: calc(90deg*var(--f));
+     /* the image size */
+   aspect-ratio: calc(1 + var(--f));
+   object-fit: cover;
+   clip-path: inset(0 var(--_f) 0 0 round var(--r));
+   transform: perspective(400px) var(--_t,rotateY(var(--_a)));
+   transition: .5s;
+   cursor: pointer;
+ }
+ img:hover {
+    clip-path: inset(0 0 0 var(--_f) round var(--r));
+    --_t: translateX(calc(-1*var(--_f))) rotateY(calc(-1*var(--_a)))
+  }
+  
+ 
+
+
+   
+     
+
+
+
+#page>#nav{
+    display: flex;
+    height: 10%;
+    width: 100% ;
+    background-color:;
+    position:absolute;
+    justify-content: space-between;
+    align-items:center ;
+    padding: 0%px 20px;
+    
+}
+
+
+ #center-nav{
+    display: flex;
+    gap: 50px;
+    background-blend-mode: color-dodge;
+    background-color: slategrey;
+    
+ 
+
+ }
+#center-nav>a{
+    font-size: 34px;
+    background-color:;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000000;
+    animation: movedown 1s ease-in 1;
+    animation-delay: 2s;
+ 
+visibility: hidden;
+animation-fill-mode: forwards;
+         
+}
+@keyframes backwards {
+    0%{
+
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    
+    100%{
+        visibility: visible;
+transform: translateY(0);
+    }
+}
+
+
+
+
+
+#nav>input{
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px 5px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    
+
+}
+#page>#nav>img{
+    animation: movedown 1s linear 1;
+    animation-delay: 1s;
+     height:120px;
+      
+    animation-fill-mode: forwards;
+   }
+
+   @keyframes movedown {
+    0%{
+
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    
+    100%{
+        visibility: visible;
+transform: translateY(0);
+    }
+}
+
+
+
+#text{
+    padding: 30px 50px;
+    top: 13%;
+    left: 5%;
+    position: relative;
+    height: 75%;
+    width: 37%;
+    
+}
+#text>h1{
+    font-size: 80px;
+    line-height: 1;
+     
+    font-weight: 30;
+    }
+ #text>h4{
+    margin-top: 20px;
+    font-size: 10px;  
+}
+ 
+
+
+
+#buttons{
+     position: relative;
+    bottom: 9%;
+
+    width: 9.5%;
+     
+    padding: 56px 20px;
+    
+    font-weight: 500;
+    
+
+    
+}
+#buttons>#b1
+{
+    padding: 10px 22px;
+    border-radius: 10px;
+    border: none;
+    height: 70px;
+    width: 500px;
+    font-size: 50px;
+    
+ ;}
+ 
+#buttons>#b2
+{    font-size: 50px;
+    
+    padding: 10px 22px;
+    border-radius: 10px;
+    border: none;
+    height: 70px;
+    width: 500px;}
+ #button>#b1>i{
+    font-size: 40px;
+ }
+ #buttons>button>i{
+    font-size: 50px;
+    position: absolute;
+
+ }
+ 
+#buttons>#b1:hover{
+    background-color:black;
+    box-shadow: 0x 0px 10px 5px black;
+    color: rgb(245, 220, 0);
+}
+#buttons>:focus{
+    outline: none;
+}
+
+#buttons>#b2:hover{
+    background-color: black;
+    box-shadow: 0x 0px 10px 5px #7f7f7f;
+    color: rgb(173, 0, 216)
+}
+#buttons>:focus{
+    outline: none;
+}
+
+
+#page1{
+    height: 100vh;
+    width: 100vw;
+   background-color: wheat;
+    
+}
+#page1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+#content {
+    flex: 1;
+    margin-right: 20px;
+   
+}
+#about-me h1 {
+    font-size: 36px;
+
+}
+#about-me {
+   
+   align-self: ;
+   flex: 1;
+   background-color: #f0f0f0;
+   padding: 20px;
+   
+   
+   
+} 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+#tech-insights {
+    font-size: 46px; /* Adjust the font size as desired */
+}
+
+#bottom-left-image {
+    
+    position: absolute;
+    bottom: 350px;
+    left: 60px;
+    border-radius: 45px;
+    width: 500px; /* Adjust the width as needed */
+height: auto;}
+
+#about-me p {
+    font-size: 26px; /* Adjust the font size as needed */
+}
+#bottom-middle-image {
+    
+    position: absolute;
+    bottom: 30px;
+    left: 250px;
+    border-radius: 45px;
+    width: 450px; /* Adjust the width as needed */
+height: auto;}
+
+#about-me {
+    /* Your existing styles for the "About Me" section */
+
+    /* Add a transition for smooth background color change and scaling effect */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#about-me:hover {
+    /* Change the background color when hovering */
+    background-color: rgb(156, 2, 173); /* Change this to the color you prefer */
+
+    /* Scale up the element when hovering */
+    transform: scale(1.1); /* You can adjust the scaling factor as needed (e.g., use 1.2 for 120%) */
+} 
+
+#bottom-left-image,
+#bottom-middle-image {
+    /* Initial styles for the images */
+    width: 500px; /* Adjust the width as needed */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Add a 3D transform effect on hover */
+#page1:hover #bottom-left-image,
+#page1:hover #bottom-middle-image {
+    transform: perspective(1000px) rotateY(20deg);
+}
+
+#page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+     
+}
+#image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
+#page2{
+    height: 100%;
+    width: 100%;
+   background-position: 100%;
+    
+     
+   
+}
+ /* Increase the text size for your headings in #page2 */
+#page2 h2 {
+    font-size: 50px; /* Adjust the value to your desired font size */
+    text-align: center;
+   
+    
+}
+#page2 h1 {
+    font-size: 80px; /* Adjust the value to your desired font size */
+   
+    text-align:  center;
+}
+ 
+#page2 h2 {
+    font-size: 50px; /* Adjust the value to your desired font size */
+    
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    transform-origin: center; /* Set the transform origin to the center */
+    color: #000000; /* Set the initial font color */
+}
+
+#page2 h2:hover {
+    transform: perspective(900px) rotateY(30deg); /* Apply 3D rotation on hover */
+    color: #000000; /* Change the text color to metallic grey on hover */
+}
+
+.cube-loader {
+    position: relative;
+     left: 400px;
+     bottom: 1120px;
+    width: 75px;
+    height: 75px;
+    transform-style: preserve-3d;
+    transform: rotateX(40deg);
+    animation: animate 4s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: rotateX(-30deg) rotateY(0);
+    }
+  
+    100% {
+      transform: rotateX(-30deg) rotateY(360deg);
+    }
+  }
+  
+  .cube-loader .cube-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+      /* top: 0;
+      left: 0; */
+    transform-style: preserve-3d;
+  }
+  
+  .cube-loader .cube-wrapper .cube-span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+      /* top: 0;
+      left: 0; */
+      /* width 75px / 2 = 37.5px */
+    transform: rotateY(calc(90deg * var(--i))) translateZ(37.5px);
+    background: linear-gradient(to bottom,
+              hsl(0, 0%, 0%) 0%,
+              hsl(0, 0%, 0%) 5.5%,
+              hsl(0, 0%, 0%) 12.1%,
+              hsl(0, 0%, 100%) 100%,
+              hsl(0, 0%, 0%) 27.9%,
+              hsl(0, 0%, 0%) 36.6%,
+              hsl(0, 0%, 0%) 45.6%,
+              hsl(0, 0%, 100%) 100%,
+              hsl(0, 0%, 0%) 63.4%,
+              hsl(0, 0%, 0%) 71.7%,
+              hsl(0, 0%, 0%) 79.4%,
+              hsl(0, 0%, 100%) 100%,
+              hsl(0, 0%, 0%) 100%,
+              hsl(0, 0%, 0%) 100%,
+              hsl(0, 0%, 0%) 100%,
+              hsl(0, 0%, 100%) 100%);
+  }
+  
+  .cube-top {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background: hsl(330, 3.13%, 25.1%) 0%;
+      /* width 75px / 2 = 37.5px */
+    transform: rotateX(90deg) translateZ(37.5px);
+    transform-style: preserve-3d;
+  }
+  
+  .cube-top::before {
+    content: '';
+    position: absolute;
+      /* u can choose any size */
+    width: 75px;
+    height: 75px;
+    background: hsl(0, 0%, 0%) 19.6%;
+    transform: translateZ(-90px);
+    filter: blur(10px);
+    box-shadow: 0 0 10px #323232,
+          0 0 20px hsl(0, 0%, 100%) 19.6%,
+          0 0 30px #323232,
+          0 0 40px hsl(0, 0%, 100%) 19.6%;
+  }
+  
+
+  
+  
+  
+  
+  
+  
+  
+ #certificates p{
+    font-size: 24px;
+    width: 70%;
+  line-height: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ff0000d2;
+     left: 250px;
+      top: 9px;
+      text-align: center;
+      transition: transform 0.3s ease;
+ position: relative;
+ 
+ }
+
+ #certificates p:hover {
+    transform: scale(1.2); /* Scale up by 20% on hover */
+  }
+ 
+   
+ #text p{
+ 
+    text-align: left;
+    padding-left: -30px;
+    padding-right: 20px;
+    font-size: 23px;
+     
+    transition: transform 0.3s ease;
+     
+ } 
+  
+ #text p:hover{
+    transform: scale(1.1); /* Scale up by 20% on hover */
+  }
+  
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
