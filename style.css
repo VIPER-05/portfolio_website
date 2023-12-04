@@ -363,7 +363,7 @@ height: auto;}
 .cube-loader {
     position: relative;
      left: 400px;
-     bottom: 1120px;
+     bottom: 1499px;
     width: 75px;
     height: 75px;
     transform-style: preserve-3d;
@@ -485,6 +485,14 @@ height: auto;}
     transform: scale(1.1); /* Scale up by 20% on hover */
   }
   
+  footer {
+    margin-top: 20px;
+   text-align: center;
+  font-size: larger;
+   margin-right: 50px; 
+}
+
+
   
   
   
