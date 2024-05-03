@@ -11,12 +11,13 @@ I am a Computer Science Engineering professional with a strong passion for Softw
  Here's how you can navigate through the sections:
 - **Home Page:** Read a brief introduction to get to know me.
 - **Portfolio:** Browse through my projects, click on each to learn more.
-- **Resume:** Download my resume for a detailed overview of my qualifications in the field of Computer Science Engineering and Software Development.{to be added}
+- **Resume:** Download my resume for a detailed overview of my qualifications in the field of Computer Science Engineering and Software Development.
 - **Contact:** Use the contact form to reach out to me, or connect through social media.
 
 This website was built using the following technologies:
 - HTML5
-- CSS3
+- CSS
+- JS
  
 Clone this repository to your local machine:
 ```bash
